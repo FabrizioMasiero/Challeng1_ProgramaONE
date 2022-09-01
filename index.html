@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="img/Logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    
+
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="inputEntrada" name="entrada" id="inputEntrada" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="botones" >
+                <p class="exclamacion">&#33 Solo letras minúsculas y sin acentos</p>
+                <button class="botonEnc" id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="botonDesenc" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>    
+        </section>
+        <section>
+            <textarea class="inputSalida" name="salida" id="inputSalida" cols="18" rows="8" placeholder="Ningún mensaje fue encontrado" disabled></textarea>
+            <button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
+        </section>
+
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
